@@ -1,0 +1,51 @@
+@page "/ToDo"
+@using BlazorAppProject.Shared
+<center>
+    <h3> To Do List </h3>
+</center>
+
+<Container>
+<Addons>
+    <Addon AddonType="AddonType.Body">
+        <TextEdit Placeholder="Digite o item a ser adicionado a lista" @bind-Text="newTodo" />
+    </Addon>
+    <Addon AddonType="AddonType.End">
+        <Button Color="Color.Secondary" @onclick="AddTask">Add</Button>
+    </Addon>
+</Addons>
+    <br />
+    <br />
+
+<Column ColumnSize="ColumnSize.Is4">
+<Table border="2">
+    <TableHeader ThemeContrast="ThemeContrast.Dark"></TableHeader>
+    <TableBody>
+            @foreach (var item in listaTodo)
+            {
+                <TableRow bgcolor="#00BFFF" border="1">
+                    
+                        <TableRowCell>@item.Item</TableRowCell>                  
+                        <center>
+                            <br />
+                        <Check TValue="bool" @bind-Checked="@item.Done">                        
+                            @(item.Done ? "Feito" : "Não Feito")                          
+                        </Check>
+                            <br />
+                        </center>
+                </TableRow>
+            }
+    </TableBody>
+</Table>
+</Column>
+</Container>
+
+@code{
+    List<Lista> listaTodo;
+    public string newTodo { get; set; }
+    private void AddTask(){
+        listaTodo.Add(new Lista { Item = newTodo });
+    }
+    protected override void OnInitialized(){
+        listaTodo = new List<Lista>(){};
+    }
+}

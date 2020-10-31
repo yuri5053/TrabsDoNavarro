@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\blazor-mysql",
+    "\\blazor-mysql\\Client",
+    "\\blazor-mysql\\Client\\Pages",
+    "\\blazor-mysql\\Client\\Shared",
+    "\\blazor-mysql\\Server",
+    "\\blazor-mysql\\Server\\Controllers",
+    "\\blazor-mysql\\Server\\Migrations",
+    "\\blazor-mysql\\Shared"
+  ],
+  "SelectedNode": "\\blazor-mysql\\Client\\Pages\\Index.razor",
+  "PreviewInSolutionExplorer": false
+}

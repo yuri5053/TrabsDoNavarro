@@ -1,4 +1,0 @@
-﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="D:\Yuri\Downloads\Blazor-Entrega-3-master\Blazor-Entrega-3-master\blazor-mysql\Client\wwwroot\" />
-  <ContentRoot BasePath="/" Path="D:\Yuri\Downloads\Blazor-Entrega-3-master\Blazor-Entrega-3-master\blazor-mysql\Client\bin\Debug\netstandard2.1\wwwroot\" />
-</StaticWebAssets>
